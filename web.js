@@ -7,15 +7,12 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
         response.send(data);
 
-var webentrete = fs.readFileSync("./webentre.html","utf-8");
-
-app.get('/webentrete', function(request, response) {
-        response.send(webentrete);
-
-
-
-
 });
+
+app.get('/webentrete',function(request, response) {
+         response.send(fs.readFileSync('./webentrete.html').toString());
+});
+
 
 var port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/bootstrap'));
