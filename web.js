@@ -9,7 +9,6 @@ app.get('/', function(request, response) {
 
 var webentrete = fs.readFileSync("./webentre.html","utf-8");
 
-var app = express.createServer(express.logger());
 app.get('/webentrete', function(request, response) {
         response.send(webentrete);
 
