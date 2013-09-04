@@ -13,6 +13,7 @@ app.get('/webentrete',function(request, response) {
          response.send(fs.readFileSync('./webentrete.html').toString());
 });
 
+app.use(express.static(__dirname + '/img'));
 
 var port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/bootstrap'));
