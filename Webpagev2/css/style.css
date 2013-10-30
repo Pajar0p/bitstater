@@ -1,0 +1,33 @@
+@media (min-width: 980px) {
+		body {
+			padding-top: 60px;
+			max-width: 980px;
+			margin: auto;
+		}
+		.linediv-l {
+			border-right: 1px white solid;
+		}
+		.linediv-r {
+			border-left: 1px white solid;
+		}
+	}
+
+@media (max-width: 480px) {
+		.copy {
+			padding: 2.5% 10%;
+		}
+		.linediv-l {
+			border-bottom: 1px white solid;
+		}
+		.linediv-r {
+			border-top: 1px white solid;
+		}
+	}
+
+body{
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		background: red;	}
+
+.hero {
+	background: url(http://farm3.staticflickr.com/2843/10403545325_5f34ea5081_o.jpg);
+}
