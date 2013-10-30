@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/webentrete',function(request, response) {
-         response.send(fs.readFileSync('./webentrete.html').toString());
+         response.send(fs.readFileSync('./Webpagev2/index.html').toString());
 });
 
 
